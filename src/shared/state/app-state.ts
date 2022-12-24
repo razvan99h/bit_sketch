@@ -31,7 +31,6 @@ export const appStateReducer = (state: AppState, action: AppStateAction): AppSta
     case AppStateActionType.dismissModal:
       return { ...state, displayedModal: null };
     case AppStateActionType.showCreateReportSuccessToast:
-      console.log('hei', state);
       return { ...state, toastMessage: 'Successfully saved the report', toastType: ToastType.success };
     case AppStateActionType.dismissToast:
       return { ...state, toastMessage: null, toastType: null };
