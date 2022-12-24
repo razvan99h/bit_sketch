@@ -38,7 +38,7 @@
 }
 .elements-container::-webkit-scrollbar-thumb {
   border-radius: 0.2rem;
-  box-shadow: var(--scrollbar-thumb-shadow-light);
+  box-shadow: var(--scrollbar-thumb-shadow-dark);
 }
 .elements-container::-webkit-scrollbar-corner {
   background: transparent;

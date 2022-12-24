@@ -1,0 +1,61 @@
+@import '../../../assets/styles/colors.module.css';
+
+.main-container {
+  display: flex;
+  gap: 10rem;
+}
+
+.label {
+  min-width: 10rem;
+}
+.label span {
+  font-size: 13px;
+  position: relative;
+}
+
+.required {
+  position: absolute;
+  top: 0;
+  right: -0.3rem;
+  font-size: 1rem;
+  color: var(--primary-color);
+}
+
+.label, input {
+  height: 2.7rem;
+  display: flex;
+  align-items: center;
+  font: inherit;
+}
+
+input {
+  width: 20rem;
+  padding: 0 1rem;
+  margin: 0;
+  border: 0.125rem solid var(--border-color);
+  border-radius: 0.35rem;
+  box-sizing: border-box;
+  font-size: 12px;
+  outline: none;
+}
+input::placeholder {
+  font-style: italic;
+}
+input:disabled {
+  opacity: 0.5;
+  background-color: inherit;
+  border: 0.125rem solid var(--border-color) !important;
+}
+input:read-only {
+  filter: brightness(0.95);
+  border: 0.125rem solid transparent;
+}
+input:hover {
+  border: 0.125rem solid var(--border-color-hover);
+}
+input:active {
+  border: 0.125rem solid var(--border-color-active);
+}
+input:focus, input:focus-within, input:focus-visible {
+  border: 0.125rem solid var(--border-color-focus);
+}

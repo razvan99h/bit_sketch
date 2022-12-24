@@ -1,4 +1,6 @@
 :root {
+  --primary-color: #027EE6;
+
   --sidebar-background-color: #181F2C;
   --sidebar-text-color: #D0D2D4;
 
@@ -11,10 +13,17 @@
   --modal-actions-shadow-color: rgba(0, 0, 0, 0.2);
   --modal-title-color: #000000;
 
-  --border-color: rgba(0, 0, 0, 0.12);
-  --title-color: rgba(0, 0, 0, 0.7);
-
   --button-text-color: #FFFFFF;
-  --button-color: #027EE6;
+  --button-color: var(--primary-color);
   --button-hollow-color: #000000;
+
+  --input-label-color: rgba(0, 0, 0, 0.7);
+  --input-value-color: rgba(0, 0, 0, 0.9);
+
+  --border-color: rgba(0, 0, 0, 0.12);
+  --border-color-hover: rgba(0, 0, 0, 0.4);
+  --border-color-focus: #0752ae;
+  --border-color-active: var(--primary-color);
+
+  --title-color: rgba(0, 0, 0, 0.7);
 }
