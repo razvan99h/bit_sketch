@@ -1,0 +1,7 @@
+:root {
+  --button-transition: filter 0.25s;
+  --button-hover-filter: invert(0.1) brightness(1.25);
+  --button-active-filter: invert(0.125) brightness(1.5);
+
+  --scrollbar-thumb-shadow-light: inset 0 0 5rem rgb(67, 67, 79);
+}

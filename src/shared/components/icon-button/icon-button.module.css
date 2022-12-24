@@ -1,0 +1,43 @@
+@import '../../../assets/styles/colors.module.css';
+
+.main-container {
+  position: relative;
+  height: 3rem;
+  width: 3rem;
+  padding: 0.9rem;
+  /* override default button styles */
+  color: inherit;
+  font: inherit;
+  outline: inherit;
+  border: none;
+  cursor: pointer;
+  background: inherit;
+  transition: var(--button-transition);
+}
+.main-container:hover {
+  filter: var(--button-hover-filter);
+}
+.main-container:active {
+  filter: var(--button-active-filter);
+}
+.main-container > * {
+  height: 100%;
+  width: auto;
+}
+
+.notifications-bubble {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--navbar-notification-text-color);
+  background-color: var(--navbar-notification-color);
+}
+

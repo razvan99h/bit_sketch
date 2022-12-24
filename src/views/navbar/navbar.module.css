@@ -1,0 +1,33 @@
+@import '../../assets/styles/colors.module.css';
+
+.main-container {
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 2rem;
+  box-sizing: border-box
+}
+
+.name-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  margin-right: 2.5rem;
+  color: var(--navbar-text-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.name-container-welcome {
+  opacity: 0.7;
+}
+
+.dropdown-icon {
+  margin-left: 0.75rem;
+  width: 0.75rem;
+  height: auto;
+  cursor: pointer;
+}

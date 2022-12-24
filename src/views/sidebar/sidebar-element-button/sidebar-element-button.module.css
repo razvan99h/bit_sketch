@@ -1,0 +1,38 @@
+@import '../../../assets/styles/colors.module.css';
+@import '../../../assets/styles/variables.module.css';
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  min-height: 6rem;
+  padding: 1rem;
+  margin: 0.125rem 0;
+  box-sizing: border-box;
+  background: var(--sidebar-background-color);
+  /* override default button styles */
+  color: inherit;
+  font: inherit;
+  outline: inherit;
+  border: none;
+  cursor: pointer;
+  transition: var(--button-transition);
+}
+.main-container:hover {
+  filter: var(--button-hover-filter);
+}
+.main-container:active {
+  filter: var(--button-active-filter);
+}
+
+span {
+  text-align: center;
+}
+
+.image {
+  width: 1.5rem;
+  height: auto;
+}
+

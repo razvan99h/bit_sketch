@@ -1,0 +1,48 @@
+@import '../../../assets/styles/colors.module.css';
+
+.main-container {
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--modal-background-color);
+}
+
+.title, .actions-container {
+    height: 6.5rem;
+}
+
+.title, .content-container, .actions-container {
+    padding: 0 1.5rem 0 3.5rem;
+}
+
+.title {
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--modal-title-color);
+    border-bottom: 1px solid var(--border-color);
+}
+.title > * {
+    font-size: 12px;
+}
+
+.content-container {
+    flex: 1;
+}
+
+.actions-container {
+    width: 100%;
+    margin-bottom: 5rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 0 6px var(--modal-actions-shadow-color);
+}

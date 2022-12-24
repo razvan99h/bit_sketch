@@ -1,0 +1,45 @@
+@import '../../assets/styles/colors.module.css';
+@import '../../assets/styles/variables.module.css';
+
+.main-container {
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  width: 8rem;
+  color: var(--sidebar-text-color);
+  background-color: var(--sidebar-background-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.logo {
+  height: 2.25rem;
+  padding: 1.25rem 0;
+  width: auto;
+}
+
+.elements-container {
+  overflow: overlay;
+  direction: rtl;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.elements-container::-webkit-scrollbar {
+  width: 0.4rem;
+}
+.elements-container::-webkit-scrollbar-thumb {
+  border-radius: 0.2rem;
+  box-shadow: var(--scrollbar-thumb-shadow-light);
+}
+.elements-container::-webkit-scrollbar-corner {
+  background: transparent;
+}

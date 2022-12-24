@@ -1,0 +1,36 @@
+@import '../../../assets/styles/colors.module.css';
+@import '../../../assets/styles/variables.module.css';
+
+.main-container {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: -1rem;
+  height: 3.5rem;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: var(--button-transition);
+}
+.main-container:hover {
+  filter: var(--button-hover-filter);
+}
+.main-container:active {
+  filter: var(--button-active-filter);
+}
+
+.arrow-container {
+  height: 100%;
+  width: auto;
+}
+
+.arrow {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  height: 1rem;
+}
+
+

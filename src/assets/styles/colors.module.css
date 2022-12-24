@@ -1,0 +1,20 @@
+:root {
+  --sidebar-background-color: #181F2C;
+  --sidebar-text-color: #D0D2D4;
+
+  --navbar-text-color: #000000;
+  --navbar-notification-text-color: #FFFFFF;
+  --navbar-notification-color: #FF883F;
+
+  --modal-overlay-color: rgba(0, 0, 0, 0.4);
+  --modal-background-color: #FFFFFF;
+  --modal-actions-shadow-color: rgba(0, 0, 0, 0.2);
+  --modal-title-color: #000000;
+
+  --border-color: rgba(0, 0, 0, 0.12);
+  --title-color: rgba(0, 0, 0, 0.7);
+
+  --button-text-color: #FFFFFF;
+  --button-color: #027EE6;
+  --button-hollow-color: #000000;
+}
