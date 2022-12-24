@@ -7,6 +7,7 @@ import Navbar from '../views/navbar/navbar';
 import { useAppState } from '../shared/state/app-state-context-provider';
 import CreateReportModal from '../views/create-report-modal/create-report-modal';
 import { ModalType } from '../shared/components/modal/modal';
+import ToastMessage from '../shared/components/toast-message/toast-message';
 
 const RouterComponent = () => {
   const appState = useAppState();
@@ -22,7 +23,16 @@ const RouterComponent = () => {
 
   return (
     <HashRouter>
-      {appState?.displayedModal ? <div className={styles.modalBackground}/> : null}
+      {
+        appState?.displayedModal
+          ? <div className={styles.modalBackground}/>
+          : null
+      }
+      {
+        appState?.toastMessage
+          ? <ToastMessage message={appState.toastMessage} type={appState.toastType}/>
+          : null
+      }
       <div className={styles.horizontalAlignment}>
         <Sidebar/>
         <div className={styles.verticalAlignment}>

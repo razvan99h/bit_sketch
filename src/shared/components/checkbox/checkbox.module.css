@@ -1,0 +1,52 @@
+@import '../../../assets/styles/colors.module.css';
+
+.main-container {
+  display: flex;
+  gap: 1rem;
+  height: 2.7rem;
+}
+
+.main-container label {
+  min-width: 10rem;
+  font-size: 13px !important;
+  color: var(--input-value-color);
+}
+
+.main-container label, input {
+  display: flex;
+  align-items: center;
+}
+
+.main-container input {
+  margin: 0;
+  width: 1.5rem;
+}
+
+.main-container input:disabled {
+  opacity: 0.5;
+  filter: grayscale(1);
+}
+
+.main-container input:checked {
+  accent-color: var(--border-color-active);
+}
+
+.main-container input:not(:checked):hover {
+  accent-color: var(--border-color-hover);
+}
+
+.main-container input:checked:hover {
+  accent-color: var(--border-color-active);
+}
+
+.main-container input:checked:active {
+  accent-color: var(--border-color-active);
+}
+
+.main-container input:focus, .main-container input:focus-within, .main-container input:focus-visible {
+  accent-color: var(--border-color-focus);
+}
+
+.disabled {
+  opacity: 0.5;
+}

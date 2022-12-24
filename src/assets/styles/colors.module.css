@@ -4,23 +4,30 @@
   --sidebar-background-color: #181F2C;
   --sidebar-text-color: #D0D2D4;
 
-  --navbar-text-color: #000000;
-  --navbar-notification-text-color: #FFFFFF;
+  --navbar-text-color: black;
+  --navbar-notification-text-color: white;
   --navbar-notification-color: #FF883F;
 
-  --modal-overlay-color: rgba(0, 0, 0, 0.4);
-  --modal-background-color: #FFFFFF;
+  --modal-overlay-color: rgba(0, 0, 0, 0.3);
+  --modal-background-color: white;
   --modal-actions-shadow-color: rgba(0, 0, 0, 0.2);
-  --modal-title-color: #000000;
+  --modal-title-color: black;
 
-  --button-text-color: #FFFFFF;
+  --toast-success-color: #268E6C;
+  --toast-error-color: #98212b;
+  --toast-warning-color: #a9691c;
+  --toast-info-color: var(--primary-color);
+  --toast-text-color: white;
+
+  --button-text-color: white;
   --button-color: var(--primary-color);
-  --button-hollow-color: #000000;
+  --button-hollow-color: black;
 
   --input-label-color: rgba(0, 0, 0, 0.7);
   --input-value-color: rgba(0, 0, 0, 0.9);
 
   --border-color: rgba(0, 0, 0, 0.12);
+  --border-color-light: rgba(255, 255, 255, 0.4);
   --border-color-hover: rgba(0, 0, 0, 0.4);
   --border-color-focus: #0752ae;
   --border-color-active: var(--primary-color);

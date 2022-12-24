@@ -16,9 +16,11 @@
   cursor: pointer;
   transition: var(--button-transition);
 }
+
 .main-container:hover {
   filter: var(--button-hover-filter);
 }
+
 .main-container:active {
   filter: var(--button-active-filter);
 }

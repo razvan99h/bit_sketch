@@ -2,13 +2,15 @@
 
 .main-container {
   display: flex;
-  gap: 10rem;
+  gap: 10.5rem;
 }
 
-.label {
+.main-container label {
   min-width: 10rem;
+  color: var(--input-label-color);
 }
-.label span {
+
+.main-container label span {
   font-size: 13px;
   position: relative;
 }
@@ -21,14 +23,14 @@
   color: var(--primary-color);
 }
 
-.label, input {
+.main-container label, input {
   height: 2.7rem;
   display: flex;
   align-items: center;
   font: inherit;
 }
 
-input {
+.main-container input {
   width: 20rem;
   padding: 0 1rem;
   margin: 0;
@@ -37,25 +39,36 @@ input {
   box-sizing: border-box;
   font-size: 12px;
   outline: none;
+  color: var(--input-value-color);
 }
-input::placeholder {
+
+.main-container input::placeholder {
   font-style: italic;
 }
-input:disabled {
+
+.main-container input:disabled {
   opacity: 0.5;
   background-color: inherit;
   border: 0.125rem solid var(--border-color) !important;
 }
-input:read-only {
+
+.main-container input:read-only {
   filter: brightness(0.95);
   border: 0.125rem solid transparent;
 }
-input:hover {
+
+.main-container input:hover {
   border: 0.125rem solid var(--border-color-hover);
 }
-input:active {
+
+.main-container input:active {
   border: 0.125rem solid var(--border-color-active);
 }
-input:focus, input:focus-within, input:focus-visible {
+
+.main-container input:focus, .main-container input:focus-within, .main-container input:focus-visible {
   border: 0.125rem solid var(--border-color-focus);
+}
+
+.disabled {
+  opacity: 0.5;
 }

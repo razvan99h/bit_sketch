@@ -1,0 +1,56 @@
+@import '../../../assets/styles/colors.module.css';
+
+.main-container {
+  position: absolute;
+  z-index: 3;
+  height: 4rem;
+  width: auto;
+  padding: 0.75rem 0.5rem 0.75rem 2rem;
+  box-sizing: border-box;
+  bottom: 14rem;
+  right: 2rem;
+  display: flex;
+  align-items: center;
+  color: var(--toast-text-color);
+  border-radius: 0.35rem;
+  font-size: 14px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.success {
+  background-color: var(--toast-success-color);
+}
+
+.error {
+  background-color: var(--toast-error-color);
+}
+
+.warning {
+  background-color: var(--toast-warning-color);
+}
+
+.info {
+  background-color: var(--toast-info-color);
+}
+
+.divider {
+  height: 100%;
+  width: 0;
+  border-left: 1px solid var(--border-color-light);
+  margin-left: 2rem;
+  margin-right: 0.5rem;
+}
+
+.first-icon {
+  height: 100%;
+  width: auto;
+  padding: 0.35rem 0;
+  box-sizing: border-box;
+  margin-right: 2rem;
+}
+
+.close-icon {
+  height: 100%;
+  width: auto;
+  fill: var(--toast-text-color);
+}

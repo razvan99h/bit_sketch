@@ -1,0 +1,19 @@
+.override {
+  position: relative;
+}
+
+.override input:read-only {
+  border: 0.125rem solid var(--border-color) !important;
+  filter: none !important;
+}
+
+.dropdown-icon {
+  position: absolute;
+  left: 38rem;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 0.75rem;
+  width: 0.75rem;
+  height: auto;
+  cursor: pointer;
+}

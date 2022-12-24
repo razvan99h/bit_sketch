@@ -28,7 +28,6 @@ const Modal: FunctionComponent<ModalProps> = (props: ModalProps) => {
   };
 
   const onSave = () => {
-    dismissModal();
     props.onSave?.();
   };
 

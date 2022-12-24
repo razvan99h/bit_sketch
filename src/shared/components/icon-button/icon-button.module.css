@@ -14,12 +14,15 @@
   background: inherit;
   transition: var(--button-transition);
 }
+
 .main-container:hover {
-  filter: var(--button-hover-filter);
+  filter: var(--icon-button-hover-filter);
 }
+
 .main-container:active {
-  filter: var(--button-active-filter);
+  filter: var(--icon-button-active-filter);
 }
+
 .main-container > * {
   height: 100%;
   width: auto;

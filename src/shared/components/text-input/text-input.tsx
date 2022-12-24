@@ -8,7 +8,7 @@ interface TextInputProps {
   disabled?: boolean;
   readOnly?: boolean;
   required?: boolean;
-  className?: React.CSSProperties;
+  className?: React.CSSProperties | string;
   onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
 }
 
@@ -23,12 +23,12 @@ const TextInput: FunctionComponent<TextInputProps> = (props: TextInputProps) => 
     <div className={`${styles.mainContainer} ${props.className}`}>
       {
         props.label && (
-          <div className={styles.label}>
+          <label className={props.disabled ? styles.disabled : ''}>
             <span>
               {props.label}
               {props.required && <div className={styles.required}>*</div>}
             </span>
-          </div>
+          </label>
         )
       }
       <input
